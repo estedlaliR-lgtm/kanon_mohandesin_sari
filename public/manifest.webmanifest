@@ -1,0 +1,28 @@
+{
+  "id": "/",
+  "name": "کانون مهندسین شهرستان ساری",
+  "short_name": "کانون ساری",
+  "description": "وب‌اپلیکیشن سامانه کانون مهندسین ساری",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "/home/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#e6f2ff",
+  "theme_color": "#293470",
+  "icons": [
+    {
+      "src": "/pwa-icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

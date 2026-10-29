@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کارگروه‌ها | کانون مهندسین ساری</title>
+  <link rel="stylesheet" href="../output.css">
+</head>
+
+<body class="bg-[#e6f2ff] text-[#293b65]">
+
+  
+<!-- نوار بالایی سایت -->
+<header dir="rtl" class="mx-auto mt-0 flex h-[58px] w-full max-w-[1262px] flex-row items-center justify-between rounded-t-none rounded-b-[15px] bg-white px-4 py-0 min-[1120px]:px-8 min-[1262px]:px-[50px]">
+
+  <!-- سمت راست: پنل کاربری و ورود اعضا -->
+  <nav aria-label="دسترسی کاربران" class="flex shrink-0 items-center gap-6 text-[12px] leading-[180%] tracking-[0] text-[#293b65]">
+
+    
+<!-- ورود اعضا -->
+<a href="/login/" class="flex items-center gap-2 whitespace-nowrap hover:text-orange-500">
+  <svg
+  width="20"
+  height="20"
+  viewBox="0 0 20 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="h-5 w-5 shrink-0"
+>
+  <path
+    d="M9.99998 10.8333C12.3009 10.8333 14.1662 8.96785 14.1662 6.66667C14.1662 4.36548 12.3009 2.5 9.99998 2.5C7.69903 2.5 5.83373 4.36548 5.83373 6.66667C5.83373 8.96785 7.69903 10.8333 9.99998 10.8333ZM9.99998 10.8333C11.7679 10.8333 13.4634 11.5357 14.7136 12.786C15.9637 14.0362 16.666 15.7319 16.666 17.5M9.99998 10.8333C8.23205 10.8333 6.53653 11.5357 5.28641 12.786C4.03629 14.0362 3.33398 15.7319 3.33398 17.5"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+  />
+</svg>
+  ورود اعضا
+</a>
+
+
+    
+<!-- پنل کاربری -->
+<a href="/login/" class="flex items-center gap-2 whitespace-nowrap text-[#293470] hover:text-orange-500">
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 18 18"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="shrink-0"
+  >
+    <path
+      d="M8.99999 8.9994H9.00749M12.0002 4.4994V2.9994C12.0002 2.60158 11.8422 2.22005 11.5609 1.93874C11.2795 1.65744 10.898 1.4994 10.5001 1.4994H7.49987C7.10201 1.4994 6.72045 1.65744 6.43912 1.93874C6.1578 2.22005 5.99975 2.60158 5.99975 2.9994V4.4994M12.0002 4.4994H5.99975M12.0002 4.4994H15.0005C15.829 4.4994 16.5006 5.17098 16.5006 5.9994V9.7494M5.99975 4.4994H2.99951C2.17102 4.4994 1.49939 5.17098 1.49939 5.9994V9.7494M16.5006 9.7494C14.275 11.2186 11.6669 12.0019 8.99999 12.0019C6.33311 12.0019 3.72497 11.2186 1.49939 9.7494M16.5006 9.7494V13.4994C16.5006 14.3278 15.829 14.9994 15.0005 14.9994H2.99951C2.17102 14.9994 1.49939 14.3278 1.49939 13.4994V9.7494"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+    />
+  </svg>
+  پنل کاربری
+</a>
+
+  </nav>
+
+  <!-- سمت چپ: جست‌وجو و لینک‌های اطلاع‌رسانی -->
+  <div class="flex flex-row-reverse items-center gap-6">
+
+    <!-- کادر جست‌وجو -->
+    <form x-data="homeSearch" x-on:submit.prevent="search()" role="search" class="flex h-[30px] w-[227px] shrink-0 items-center gap-[10px] rounded-[18px] bg-[#293b70] px-[10px] py-0 text-white">
+
+      <!-- متن جست‌وجو در سمت راست -->
+      <input
+        type="search"
+        x-model="query"
+        placeholder="جست‌وجو در سایت..."
+        aria-label="جست‌وجو در سایت"
+        dir="rtl"
+        class="min-w-0 flex-1 bg-transparent text-right text-[12px] leading-[180%] tracking-[0] text-white outline-none placeholder:text-white/80"
+      >
+
+      <!-- آیکون جست‌وجو در سمت چپ -->
+      
+<button type="submit" aria-label="جست‌وجو" class="flex h-4 w-4 shrink-0 items-center justify-center bg-transparent p-0"><svg
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="h-4 w-4 shrink-0"
+>
+  <path
+    d="M14.0001 14.0001L11.1068 11.1068M12.6667 7.33333C12.6667 10.2789 10.2789 12.6667 7.33333 12.6667C4.38781 12.6667 2 10.2789 2 7.33333C2 4.38781 4.38781 2 7.33333 2C10.2789 2 12.6667 4.38781 12.6667 7.33333Z"
+    stroke="#8A9EB5"
+    stroke-width="1.8"
+    stroke-linecap="round"
+  />
+</svg></button>
+
+
+    <p class="sr-only" aria-live="polite" x-text="status"></p>
+</form>
+
+    <nav aria-label="اطلاعات سایت" class="flex shrink-0 items-center gap-5 text-[12px] leading-[180%] tracking-[0] text-[#293b65]">
+
+      <a href="/contact/" class="whitespace-nowrap hover:text-orange-500">
+        ☎ تماس با ما
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+  
+  
+<main>
+<!-- بنر اصلی سایت -->
+<section
+  aria-label="بنر اصلی کانون مهندسین ساری"
+  class="relative mx-auto mt-[15px] aspect-[1262/133] w-full max-w-[1262px] overflow-hidden rounded-tl-[25px] rounded-tr-[25px]"
+>
+  <!-- پس‌زمینهٔ بنر -->
+  <img
+    src="../src/images/back%20heder.png"
+    alt=""
+    aria-hidden="true"
+    draggable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full select-none object-fill"
+  >
+
+  <!-- تصویر رهبران و پرچم؛ موقعیت و اندازه بر اساس Figma دسکتاپ -->
+  <div class="absolute left-[69.33%] top-[-8.27%] h-[127.07%] w-[34.23%] overflow-hidden">
+    <div class="absolute left-[3.01%] top-[18.93%] flex h-[61.54%] w-[51.16%] items-center justify-center overflow-hidden rounded-[7px] p-[0.93%]">
+      <img
+        src="../src/images/rahbaran.png"
+        alt="تصویر رهبران"
+        draggable="false"
+        class="h-[107.69%] w-full rounded-[5px] object-fill"
+      >
+    </div>
+
+    <img
+      src="../src/images/parcham.png"
+      alt="پرچم ایران"
+      draggable="false"
+      class="absolute left-[57.41%] top-0 h-[82.84%] w-[42.59%] object-fill"
+    >
+  </div>
+
+  <!-- نشان و عنوان کانون -->
+  <div class="absolute left-[33.76%] top-[9.02%] h-[108.27%] w-[32.88%] overflow-hidden">
+    <img
+      src="../src/images/logo_kanoon.png"
+      alt="نشان کانون مهندسین ساری"
+      draggable="false"
+      class="absolute left-[42.65%] top-[0.69%] h-[30.56%] w-[12.05%] object-fill"
+    >
+
+    <h1 class="absolute left-[12.05%] top-[30.56%] whitespace-nowrap text-[clamp(19px,1.9vw,24px)] font-bold leading-[1.5] text-white">
+      کانون مهندسین شهرستان ساری
+    </h1>
+
+    <p class="absolute left-[23.49%] top-[57.64%] whitespace-nowrap text-[clamp(9px,0.95vw,12px)] font-normal leading-[1.5] text-[#8a9eb5]">
+      سازمان نظام مهندسی ساختمان استان مازندران
+    </p>
+  </div>
+
+  <!-- شعار سال -->
+  <div class="absolute left-[2.06%] top-[12.03%] h-[88.72%] w-[23.85%] overflow-hidden rounded-lg">
+    <img
+      src="../src/images/shoar%20sal.png"
+      alt="شعار سال"
+      draggable="false"
+      class="absolute left-[2.94%] top-[6.78%] h-[76.27%] w-[103.05%] object-fill"
+    >
+  </div>
+</section>
+
+  <!-- ناوبری اصلی مطابق فریم دسکتاپ Figma -->
+  <nav
+    aria-label="ناوبری اصلی"
+    dir="rtl"
+    class="relative z-10 mx-auto -mt-[2px] flex h-[60px] w-full max-w-[1260px] items-stretch justify-between rounded-b-[25px] bg-white px-[clamp(12px,calc(28.81356vw_-_283.05085px),80px)] text-[clamp(12px,1.11112vw,14px)] font-bold text-[#293470]"
+  >
+    <a href="/home/" class="flex h-full shrink-0 items-center whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
+      صفحه اصلی
+    </a>
+
+    <a href="/news/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
+      <span>اخبار و اطلاعیه‌ها</span>
+      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
+        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <a href="/services/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
+      <span>خدمات</span>
+      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
+        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <a href="/app/" class="flex h-[60px] w-[clamp(112px,11.667vw,147px)] shrink-0 items-center justify-center whitespace-nowrap rounded-[5px] bg-[#f78c32] px-2.5 text-[#293470]">
+      نصب اپلیکیشن
+    </a>
+
+    <a href="/members/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
+      <span>اعضای کانون</span>
+      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
+        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <a href="/workgroup/" class="relative flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] text-[#3871ae] hover:text-orange-500" aria-current="page">
+      <span>کارگروه‌ها</span>
+      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
+        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span aria-hidden="true" class="absolute bottom-0 left-2 h-[3px] w-[clamp(76px,7.0635vw,89px)] bg-[#ff7400]"></span>
+    </a>
+
+    <a href="/contact/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
+      <span>ارتباط با ما</span>
+      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
+        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </nav>
+
+
+  <section aria-labelledby="page-title" dir="rtl" class="mx-auto mt-[22px] min-h-[260px] w-full max-w-[1266px] px-5 pt-4">
+    <h1 id="page-title" class="text-[20px] font-bold leading-[1.6] text-[#344f73]">کارگروه‌ها</h1>
+    <div aria-hidden="true" class="mt-1 h-[3px] w-[34px] bg-[#f78c32]"></div>
+  </section>
+</main>
+
+  <!-- فوتر سازمان: اطلاعات تماس، لینک‌ها، نقشه و دانلود اپلیکیشن -->
+  <footer aria-label="اطلاعات پایانی کانون مهندسین ساری" class="relative mx-auto mt-[44px] h-[227px] w-full max-w-[1266px] overflow-hidden rounded-tl-[25px] rounded-tr-[25px] bg-white">
+    <div dir="ltr" class="ml-[7.27%] grid w-[89%] grid-cols-[163fr_291fr_209fr_163fr_237fr] gap-[1.4%] pt-[13px]">
+      <section dir="ltr" class="flex flex-col items-end gap-2 pt-[10px] text-right">
+        <h2 id="app-download-title" class="w-full text-[15px] font-bold text-[#293470]">دانلود اپلیکیشن</h2>
+        <span class="flex h-[23px] w-[59px] items-center justify-center rounded-[50px] bg-[#9daabb] text-[10px] text-white">نسخه اندروید</span>
+        <span class="flex h-[21px] w-[55px] items-center justify-center rounded-[50px] bg-[#91a9c3] text-[10px] text-white">نسخه ios</span>
+      </section>
+
+      <img src="../src/images/footer-map.webp" alt="نقشهٔ نشانی کانون مهندسین ساری در ساری" class="h-auto w-full self-start rounded-[18px] object-cover">
+
+      <section dir="rtl" class="pt-2 text-right">
+        <h2 id="contact-title" class="text-[15px] font-bold text-[#293470]">ارتباط با ما</h2>
+        <ul class="mt-3 flex flex-col gap-2 text-[11px] text-[#344f73]">
+          <li class="flex h-5 items-center gap-3">
+            <img src="../src/icons/footer-location.svg" alt="" class="h-[15px] w-[15px] shrink-0">
+            <span class="min-w-0 flex-1 whitespace-nowrap">ساری، خیابان فرهنگ، کوچه فرهنگ 24</span>
+          </li>
+          <li class="flex h-5 items-center gap-3">
+            <img src="../src/icons/footer-phone.svg" alt="" class="h-[15px] w-[15px] shrink-0">
+            <a href="tel:01133324567" dir="ltr" class="flex-1">۰۱۱-۳۳۳۲۴۵۶۷</a>
+          </li>
+          <li class="flex h-5 items-center gap-3">
+            <img src="../src/icons/footer-email.svg" alt="" class="h-[15px] w-[15px] shrink-0">
+            <a href="mailto:info@kanoonsari.com" dir="ltr" class="flex-1">info@kanoonsari.com</a>
+          </li>
+        </ul>
+        <div aria-label="شبکه‌های اجتماعی کانون" dir="ltr" class="mt-[18px] flex items-center justify-end gap-5">
+          <span role="img" aria-label="Telegram"><img src="../src/icons/footer-telegram.svg" alt="" class="h-[19px] w-[19px]"></span>
+          <span role="img" aria-label="Instagram"><img src="../src/icons/footer-instagram.svg" alt="" class="h-[19px] w-[19px]"></span>
+          <span role="img" aria-label="ویدئوهای کانون"><img src="../src/icons/footer-video.svg" alt="" class="h-[19px] w-[19px]"></span>
+        </div>
+      </section>
+
+      <section dir="ltr" class="flex flex-col items-end gap-2 pt-[10px] text-right">
+        <h2 class="w-full text-[15px] font-bold text-[#293470]">لینک‌های مفید</h2>
+        <a href="https://lmsiriceo.ir/" class="flex items-center gap-2.5 text-[11px] text-[#344f73]">
+          سامانه ملی نظام مهندسی
+          <svg aria-hidden="true" viewBox="0 0 10 10" class="h-2.5 w-2.5 shrink-0" fill="none"><path d="m6.5 1.5-3.5 3.5 3.5 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </a>
+        <a href="/services/" class="flex items-center gap-2.5 text-[11px] text-[#344f73]">
+          خدمات
+          <svg aria-hidden="true" viewBox="0 0 10 10" class="h-2.5 w-2.5 shrink-0" fill="none"><path d="m6.5 1.5-3.5 3.5 3.5 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </a>
+        <a href="/news/" class="flex items-center gap-2.5 text-[11px] text-[#344f73]">
+          آرشیو خبری
+          <svg aria-hidden="true" viewBox="0 0 10 10" class="h-2.5 w-2.5 shrink-0" fill="none"><path d="m6.5 1.5-3.5 3.5 3.5 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </a>
+        <a href="/contact/" class="flex items-center gap-2.5 text-[11px] text-[#344f73]">
+          تماس با ما
+          <svg aria-hidden="true" viewBox="0 0 10 10" class="h-2.5 w-2.5 shrink-0" fill="none"><path d="m6.5 1.5-3.5 3.5 3.5 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </a>
+      </section>
+
+      <img src="../src/images/footer-logo.svg" alt="نشان کانون مهندسین ساری" class="mt-7 h-auto w-full self-start">
+    </div>
+
+    <div class="absolute bottom-0 left-[3.79%] flex h-6 w-[92.33%] items-center justify-center rounded-t-[25px] bg-[#6f86b8] text-center text-[11px] text-[#293470]">
+      <a href="https://www.irancompile.com/" target="_blank" rel="noopener noreferrer" class="text-inherit">طراحی و توسعه یافته شده توسط شرکت مهندسی صدرا رایانه طبرستان</a>
+    </div>
+  </footer>
+
+
+
+  <script type="module" src="../src/main.js"></script>
+</body>
+</html>
