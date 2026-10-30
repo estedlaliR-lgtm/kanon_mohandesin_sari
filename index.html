@@ -12,105 +12,40 @@
 
   
 <!-- نوار بالایی سایت -->
-<header dir="rtl" class="mx-auto mt-0 flex h-[58px] w-full max-w-[1262px] flex-row items-center justify-between rounded-t-none rounded-b-[15px] bg-white px-4 py-0 min-[1120px]:px-8 min-[1262px]:px-[50px]">
-
-  <!-- سمت راست: پنل کاربری و ورود اعضا -->
-  <nav aria-label="دسترسی کاربران" class="flex shrink-0 items-center gap-6 text-[12px] leading-[180%] tracking-[0] text-[#293b65]">
-
-    
-<!-- ورود اعضا -->
-<a href="/login/" class="flex items-center gap-2 whitespace-nowrap hover:text-orange-500">
-  <svg
-  width="20"
-  height="20"
-  viewBox="0 0 20 20"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="h-5 w-5 shrink-0"
->
-  <path
-    d="M9.99998 10.8333C12.3009 10.8333 14.1662 8.96785 14.1662 6.66667C14.1662 4.36548 12.3009 2.5 9.99998 2.5C7.69903 2.5 5.83373 4.36548 5.83373 6.66667C5.83373 8.96785 7.69903 10.8333 9.99998 10.8333ZM9.99998 10.8333C11.7679 10.8333 13.4634 11.5357 14.7136 12.786C15.9637 14.0362 16.666 15.7319 16.666 17.5M9.99998 10.8333C8.23205 10.8333 6.53653 11.5357 5.28641 12.786C4.03629 14.0362 3.33398 15.7319 3.33398 17.5"
-    stroke="currentColor"
-    stroke-width="1.8"
-    stroke-linecap="round"
-  />
-</svg>
-  ورود اعضا
-</a>
-
-
-    
-<!-- پنل کاربری -->
-<a href="/login/" class="flex items-center gap-2 whitespace-nowrap text-[#293470] hover:text-orange-500">
-  <svg
-    width="18"
-    height="18"
-    viewBox="0 0 18 18"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    class="shrink-0"
-  >
-    <path
-      d="M8.99999 8.9994H9.00749M12.0002 4.4994V2.9994C12.0002 2.60158 11.8422 2.22005 11.5609 1.93874C11.2795 1.65744 10.898 1.4994 10.5001 1.4994H7.49987C7.10201 1.4994 6.72045 1.65744 6.43912 1.93874C6.1578 2.22005 5.99975 2.60158 5.99975 2.9994V4.4994M12.0002 4.4994H5.99975M12.0002 4.4994H15.0005C15.829 4.4994 16.5006 5.17098 16.5006 5.9994V9.7494M5.99975 4.4994H2.99951C2.17102 4.4994 1.49939 5.17098 1.49939 5.9994V9.7494M16.5006 9.7494C14.275 11.2186 11.6669 12.0019 8.99999 12.0019C6.33311 12.0019 3.72497 11.2186 1.49939 9.7494M16.5006 9.7494V13.4994C16.5006 14.3278 15.829 14.9994 15.0005 14.9994H2.99951C2.17102 14.9994 1.49939 14.3278 1.49939 13.4994V9.7494"
-      stroke="currentColor"
-      stroke-width="1.8"
-      stroke-linecap="round"
-    />
-  </svg>
-  پنل کاربری
-</a>
-
+<header dir="rtl" class="mx-auto mt-0 flex h-[58px] w-full max-w-[1262px] flex-row items-center justify-between gap-2 rounded-t-none rounded-b-[15px] bg-white px-2 py-0 min-[640px]:px-4 min-[1120px]:px-8 min-[1262px]:px-[50px]">
+  <!-- سمت راست: ورود اعضا و ایمیل رسمی سایت -->
+  <nav aria-label="دسترسی کاربران" class="flex min-w-0 max-w-[48%] shrink items-center gap-[clamp(4px,0.8vw,12px)] text-[clamp(9px,0.95vw,12px)] leading-[180%] tracking-[0] text-[#293b65]">
+    <a href="/login/" aria-label="ورود اعضا" class="flex min-w-0 shrink items-center gap-1 whitespace-nowrap hover:text-orange-500 min-[420px]:gap-2">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" aria-hidden="true">
+        <path d="M9.99998 10.8333C12.3009 10.8333 14.1662 8.96785 14.1662 6.66667C14.1662 4.36548 12.3009 2.5 9.99998 2.5C7.69903 2.5 5.83373 4.36548 5.83373 6.66667C5.83373 8.96785 7.69903 10.8333 9.99998 10.8333ZM9.99998 10.8333C11.7679 10.8333 13.4634 11.5357 14.7136 12.786C15.9637 14.0362 16.666 15.7319 16.666 17.5M9.99998 10.8333C8.23205 10.8333 6.53653 11.5357 5.28641 12.786C4.03629 14.0362 3.33398 15.7319 3.33398 17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <span class="hidden whitespace-nowrap min-[420px]:inline">ورود اعضا</span>
+    </a>
+    <a href="mailto:info@kanoonsari.com" aria-label="ارسال ایمیل به info@kanoonsari.com" class="flex min-w-0 shrink items-center gap-1 text-[#293470] hover:text-orange-500 min-[420px]:gap-2">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[17px] w-[17px] shrink-0" aria-hidden="true">
+        <path d="M2.25 3.25h13.5c.55 0 1 .45 1 1v9.5c0 .55-.45 1-1 1H2.25c-.55 0-1-.45-1-1v-9.5c0-.55.45-1 1-1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="m1.75 4 7.25 5.5L16.25 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="max-w-[clamp(52px,13vw,168px)] truncate whitespace-nowrap">info@kanoonsari.com</span>
+    </a>
   </nav>
 
-  <!-- سمت چپ: جست‌وجو و لینک‌های اطلاع‌رسانی -->
-  <div class="flex flex-row-reverse items-center gap-6">
-
-    <!-- کادر جست‌وجو -->
-    <form x-data="homeSearch" x-on:submit.prevent="search()" role="search" class="flex h-[30px] w-[227px] shrink-0 items-center gap-[10px] rounded-[18px] bg-[#293b70] px-[10px] py-0 text-white">
-
-      <!-- متن جست‌وجو در سمت راست -->
-      <input
-        type="search"
-        x-model="query"
-        placeholder="جست‌وجو در سایت..."
-        aria-label="جست‌وجو در سایت"
-        dir="rtl"
-        class="min-w-0 flex-1 bg-transparent text-right text-[12px] leading-[180%] tracking-[0] text-white outline-none placeholder:text-white/80"
-      >
-
-      <!-- آیکون جست‌وجو در سمت چپ -->
-      
-<button type="submit" aria-label="جست‌وجو" class="flex h-4 w-4 shrink-0 items-center justify-center bg-transparent p-0"><svg
-  width="16"
-  height="16"
-  viewBox="0 0 16 16"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="h-4 w-4 shrink-0"
->
-  <path
-    d="M14.0001 14.0001L11.1068 11.1068M12.6667 7.33333C12.6667 10.2789 10.2789 12.6667 7.33333 12.6667C4.38781 12.6667 2 10.2789 2 7.33333C2 4.38781 4.38781 2 7.33333 2C10.2789 2 12.6667 4.38781 12.6667 7.33333Z"
-    stroke="#8A9EB5"
-    stroke-width="1.8"
-    stroke-linecap="round"
-  />
-</svg></button>
-
-
-    <p class="sr-only" aria-live="polite" x-text="status"></p>
-</form>
-
-    <nav aria-label="اطلاعات سایت" class="flex shrink-0 items-center gap-5 text-[12px] leading-[180%] tracking-[0] text-[#293b65]">
-
-      <a href="/contact/" class="whitespace-nowrap hover:text-orange-500">
-        ☎ تماس با ما
-      </a>
-
-
+  <!-- سمت چپ: تاریخ شمسی و ساعت زنده، در محل قبلی جست‌وجو -->
+  <div class="flex min-w-0 max-w-[50%] flex-row-reverse items-center gap-[clamp(4px,0.8vw,12px)]">
+    <div dir="rtl" aria-label="تاریخ شمسی و ساعت محلی" class="flex h-[30px] w-[clamp(100px,18vw,227px)] min-w-0 shrink items-center gap-1 rounded-[18px] bg-[#293b70] px-2 py-0 text-white min-[480px]:gap-[7px] min-[480px]:px-[10px]">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" aria-hidden="true">
+        <circle cx="10" cy="10" r="7.25" stroke="#8A9EB5" stroke-width="1.5" />
+        <path d="M10 5.75v4.5l3 1.75M7 1.75h6M10 1.75v1" stroke="#8A9EB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div class="flex min-w-0 flex-1 items-center justify-between gap-1 text-[clamp(8px,0.85vw,11px)] leading-tight tracking-[0] min-[480px]:gap-[6px]">
+        <time data-shamsi-date class="min-w-0 truncate whitespace-nowrap" aria-label="تاریخ شمسی">—</time>
+        <time data-local-clock class="shrink-0 whitespace-nowrap tabular-nums" aria-label="ساعت محلی">—</time>
+      </div>
+    </div>
+    <nav aria-label="اطلاعات سایت" class="flex min-w-0 shrink-0 items-center text-[clamp(9px,0.95vw,12px)] leading-[180%] tracking-[0] text-[#293b65]">
+      <a href="/contact/" class="whitespace-nowrap hover:text-orange-500">☎ تماس با ما</a>
     </nav>
-
   </div>
-
 </header>
 
 
@@ -284,86 +219,124 @@
       </a>
     </article>
 
-    <!-- اسلایدر خبر ویژه -->
-    <article dir="rtl" aria-label="خبر ویژه" class="relative h-full min-w-0 flex-1 overflow-hidden rounded-[25px] bg-[#293470]">
+    <!-- اسلایدشو جلسات هیئت‌مدیره -->
+    <article
+      x-data="meetingSlideshow"
+      @mouseenter="pauseForInteraction()"
+      @mouseleave="resumeAfterInteraction()"
+      @visibilitychange.window="document.hidden ? stopAutoplay() : startAutoplay()"
+      dir="rtl"
+      aria-label="اسلایدشو جلسات هیئت‌مدیره"
+      class="relative h-full min-w-0 flex-1 overflow-hidden rounded-[25px] bg-[#293470]"
+    >
       <img
-        src="./src/images/slide%20akhbar.png"
-        alt=""
-        aria-hidden="true"
-        class="absolute inset-0 h-full w-full object-cover"
+        :src="slides[activeSlide].src"
+        :alt="slides[activeSlide].alt"
+        draggable="false"
+        class="absolute inset-0 h-full w-full select-none object-contain"
       >
 
-      <div class="absolute right-[28px] top-[239px] rounded-[18px] bg-[#f78c32] px-3 py-1 text-[12px] font-bold text-white">
-        اخبار ویژه
-      </div>
+      <h2
+        aria-live="polite"
+        aria-atomic="true"
+        class="absolute bottom-5 right-5 z-10 max-w-[35%] rounded-[8px] bg-[#293470]/85 px-3 py-2 text-right text-[clamp(10px,1vw,13px)] font-bold leading-[1.7] text-white shadow-sm"
+        x-text="slides[activeSlide].title"
+      ></h2>
 
-      <h2 class="absolute right-[28px] top-[278px] max-w-[520px] text-right text-[22px] font-bold leading-[1.8] text-white">
-        <span class="block">برگزاری دوره‌های آموزشی تخصصی</span>
-        <span class="block">برای اعضای کانون</span>
-      </h2>
-
-      <p class="absolute right-[28px] top-[365px] max-w-[520px] text-right text-[13px] font-normal leading-[1.8] text-white/90">
-        کانون مهندسین ساری با همکاری اساتید مجرب، دوره‌های تخصصی و کاربردی در حوزه‌های مختلف مهندسی را برگزار می‌کند.
-      </p>
-
-      <a href="/services/#courses" dir="ltr" class="absolute right-[28px] top-[420px] flex h-[44px] items-center gap-2.5 rounded-[22px] bg-[#f78c32] px-[18px] text-[12px] font-bold text-white">
-        <svg aria-hidden="true" viewBox="0 0 16 16" class="h-4 w-4 shrink-0" fill="none">
+      <a href="/services/#courses" dir="ltr" class="absolute bottom-5 left-5 z-10 flex h-[34px] items-center gap-1.5 rounded-full bg-[#f78c32] px-3 text-[10px] font-bold text-white shadow-sm transition-colors hover:bg-[#e97b23] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+        <svg aria-hidden="true" viewBox="0 0 16 16" class="h-3.5 w-3.5 shrink-0" fill="none">
           <path d="M13 8H3m0 0 4-4m-4 4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
         <span dir="rtl">مشاهده جزئیات</span>
       </a>
 
-      <div aria-label="صفحهٔ اول از چهار خبر" class="absolute bottom-[28px] left-[28px] flex items-center gap-2">
-        <span class="h-[14px] w-[14px] rounded-full bg-[#f78c32]"></span>
-        <span class="h-[14px] w-[14px] rounded-full bg-[#e5edf4]"></span>
-        <span class="h-[14px] w-[14px] rounded-full bg-[#e5edf4]"></span>
-        <span class="h-[14px] w-[14px] rounded-full bg-[#e5edf4]"></span>
+      <div role="group" aria-label="انتخاب اسلاید" class="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-[6px]">
+        <template x-for="(slide, index) in slides" :key="slide.src">
+          <button
+            type="button"
+            :aria-label="`نمایش اسلاید ${index + 1}`"
+            :aria-pressed="(activeSlide === index).toString()"
+            @click="goTo(index)"
+            class="h-[10px] w-[10px] rounded-full border border-white/70 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            :class="activeSlide === index ? 'bg-[#f78c32]' : 'bg-[#e5edf4]'"
+          ></button>
+        </template>
       </div>
     </article>
 
     <!-- فهرست اطلاعیه‌های مهم -->
-    <article dir="rtl" class="flex h-full w-[347px] shrink-0 flex-col overflow-hidden rounded-[25px] border border-[#e5edf4] bg-white">
-      <header class="px-4 pb-2 pt-[9px]">
-        <h2 id="important-notices-title" class="text-[20px] font-bold leading-[1.6] text-[#344f73]">اطلاعیه‌های مهم</h2>
-        <div aria-hidden="true" class="mt-1 h-[3px] w-[34px] bg-[#f78c32]"></div>
+    <article
+      x-data="importantNotices"
+      dir="rtl"
+      aria-labelledby="important-notices-title"
+      class="flex h-full min-h-0 w-[347px] shrink-0 flex-col overflow-hidden rounded-[25px] border border-[#e5edf4] bg-white shadow-[0_5px_20px_rgba(41,52,112,0.06)]"
+    >
+      <header class="shrink-0 px-4 pt-4">
+        <h2 id="important-notices-title" class="sr-only">اطلاعیه‌های مهم</h2>
+        <div role="tablist" aria-label="دسته‌بندی مطالب" class="mt-0 flex items-center gap-1 rounded-xl bg-[#f1f5f9] p-1">
+          <template x-for="tab in categories" :key="tab.id">
+            <button
+              type="button"
+              role="tab"
+              :id="`notice-tab-${tab.id}`"
+              aria-controls="notice-tab-panel"
+              :aria-selected="(activeCategory === tab.id).toString()"
+              @click="selectCategory(tab.id)"
+              :class="activeCategory === tab.id ? 'bg-[#293470] text-white shadow-sm' : 'text-[#71839b] hover:bg-white hover:text-[#293470]'"
+              class="flex min-w-0 flex-1 items-center justify-center rounded-lg px-1.5 py-2 text-[11px] font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f78c32]"
+              x-text="tab.label"
+            ></button>
+          </template>
+        </div>
       </header>
 
-      <ul class="flex min-h-0 flex-1 flex-col px-3">
-        <li class="flex min-h-[94px] flex-1 items-center gap-4 border-b border-[#e5edf4] pt-3 pb-[22px]">
-          <img src="./src/images/notice-training.webp" alt="" class="h-[59px] w-[73px] shrink-0 rounded-[5px] object-cover">
-          <div class="min-w-0 flex-1">
-            <h3 class="text-[12px] font-bold leading-[1.7] text-[#344f73]">آغاز ثبت‌نام دوره‌های آموزشی تابستان ۱۴۰۴</h3>
-            <time class="mt-1 block text-[10px] text-[#8a9eb5]" datetime="2025-06-22">۱۴۰۴/۰۴/۰۱</time>
-          </div>
-        </li>
-        <li class="flex min-h-[94px] flex-1 items-center gap-4 border-b border-[#e5edf4] pt-3 pb-[22px]">
-          <img src="./src/images/notice-membership.webp" alt="" class="h-[59px] w-[73px] shrink-0 rounded-[5px] object-cover">
-          <div class="min-w-0 flex-1">
-            <h3 class="text-[12px] font-bold leading-[1.7] text-[#344f73]">اطلاعیه تمدید مهلت پرداخت حق عضویت سال ۱۴۰۴</h3>
-            <time class="mt-1 block text-[10px] text-[#8a9eb5]" datetime="2025-06-15">۱۴۰۴/۰۳/۲۵</time>
-          </div>
-        </li>
-        <li class="flex min-h-[94px] flex-1 items-center gap-4 border-b border-[#e5edf4] pt-3 pb-[22px]">
-          <img src="./src/images/notice-tariff.webp" alt="" class="h-[59px] w-[73px] shrink-0 rounded-[5px] object-cover">
-          <div class="min-w-0 flex-1">
-            <h3 class="text-[12px] font-bold leading-[1.7] text-[#344f73]">ابلاغ تعرفه خدمات مهندسی سال ۱۴۰۴</h3>
-            <time class="mt-1 block text-[10px] text-[#8a9eb5]" datetime="2025-06-08">۱۴۰۴/۰۳/۱۸</time>
-          </div>
-        </li>
-        <li class="flex min-h-[94px] flex-1 items-center gap-4 border-b border-[#e5edf4] pt-3 pb-[22px]">
-          <img src="./src/images/notice-assembly.webp" alt="" class="h-[59px] w-[73px] shrink-0 rounded-[5px] object-cover">
-          <div class="min-w-0 flex-1">
-            <h3 class="text-[12px] font-bold leading-[1.7] text-[#344f73]">برگزاری مجمع عمومی عادی سالیانه کانون</h3>
-            <time class="mt-1 block text-[10px] text-[#8a9eb5]" datetime="2025-05-29">۱۴۰۴/۰۳/۱۰</time>
-          </div>
-        </li>
-      </ul>
+      <div
+        id="notice-tab-panel"
+        role="tabpanel"
+        :aria-labelledby="`notice-tab-${activeCategory}`"
+        tabindex="0"
+        class="notices-scrollbar min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 pb-3 pt-3"
+      >
+        <ul x-show="activeItems.length > 0" class="space-y-2">
+          <template x-for="item in activeItems" :key="item.title">
+            <li class="rounded-[14px] border border-[#e8eef4] bg-[#fbfdff] p-3 transition-colors hover:border-[#cbd8e5] hover:bg-white">
+              <div class="flex items-center justify-between gap-2">
+                <span class="inline-flex min-w-0 items-center gap-1.5 rounded-full bg-[#eaf3fa] px-2 py-1 text-[10px] font-bold text-[#344f73]">
+                  <span aria-hidden="true" class="h-1.5 w-1.5 shrink-0 rounded-full bg-[#f78c32]"></span>
+                  <span x-text="item.type"></span>
+                </span>
+                <time dir="ltr" :datetime="item.dateTime || null" class="shrink-0 whitespace-nowrap text-[10px] font-medium tabular-nums text-[#8a9eb5]" x-text="item.date"></time>
+              </div>
+              <h3 class="mt-2 text-right text-[12px] font-bold leading-[1.8] text-[#344f73]" x-text="item.title"></h3>
+              <div class="mt-2 flex justify-start">
+                <template x-if="item.href">
+                  <a :href="item.href" class="inline-flex items-center gap-1 text-[10px] font-bold text-[#3871ae] transition-colors hover:text-[#f78c32]">
+                    مشاهده جزئیات
+                    <svg aria-hidden="true" viewBox="0 0 16 16" class="h-3 w-3" fill="none"><path d="M13 8H3m0 0 4-4m-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </a>
+                </template>
+                <template x-if="!item.href">
+                  <span aria-disabled="true" title="نشانی اختصاصی این مطلب در فایل‌های پروژه موجود نیست" class="inline-flex cursor-not-allowed items-center gap-1 text-[10px] font-bold text-[#8a9eb5] opacity-70">
+                    مشاهده جزئیات
+                    <svg aria-hidden="true" viewBox="0 0 16 16" class="h-3 w-3" fill="none"><path d="M13 8H3m0 0 4-4m-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </template>
+              </div>
+            </li>
+          </template>
+        </ul>
 
-      <a href="/news/" dir="ltr" class="flex h-[38px] shrink-0 self-end items-center gap-2 px-3.5 text-[11px] font-bold text-[#344f73]">
-        <svg aria-hidden="true" viewBox="0 0 16 16" class="h-[15px] w-[15px] shrink-0" fill="none">
-          <path d="M13 8H3m0 0 4-4m-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        مشاهده همه اطلاعیه‌ها
+        <div x-show="activeItems.length === 0" role="status" class="flex min-h-[190px] flex-col items-center justify-center px-4 text-center">
+          <span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-full bg-[#eaf3fa] text-[#8a9eb5]">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none"><path d="M7 4.75h10A2.25 2.25 0 0 1 19.25 7v12.25H7A2.25 2.25 0 0 1 4.75 17V7A2.25 2.25 0 0 1 7 4.75Z" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 9h7M8.5 12.5h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <p class="mt-3 text-[11px] leading-6 text-[#8a9eb5]">محتوایی برای این دسته در پروژه ثبت نشده است.</p>
+        </div>
+      </div>
+
+      <a href="/news/" dir="ltr" class="flex h-[40px] shrink-0 items-center justify-between border-t border-[#e8eef4] px-4 text-[10px] font-bold text-[#344f73] transition-colors hover:text-[#f78c32]">
+        <span dir="rtl">مشاهده همه اطلاعیه‌ها و اخبار</span>
+        <svg aria-hidden="true" viewBox="0 0 16 16" class="h-[14px] w-[14px] shrink-0" fill="none"><path d="M13 8H3m0 0 4-4m-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
       </a>
     </article>
   </section>

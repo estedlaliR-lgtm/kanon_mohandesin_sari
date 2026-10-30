@@ -3,6 +3,11 @@ import '@fontsource/vazirmatn/500.css';
 import '@fontsource/vazirmatn/700.css';
 
 import Alpine from 'alpinejs'
+import meeting36 from './اسلایدشو/meeting-36.webp'
+import meeting37 from './اسلایدشو/meeting-37.webp'
+import meeting38 from './اسلایدشو/meeting-38.webp'
+import meeting39 from './اسلایدشو/meeting-39.webp'
+import meeting40 from './اسلایدشو/meeting-40.webp'
 
 window.Alpine = Alpine
 
@@ -53,6 +58,81 @@ Alpine.data('homeSearch', () => ({
 
     match.scrollIntoView({ block: 'center' })
     this.status = `نتیجه پیدا شد: ${(match.innerText || match.textContent || '').trim()}`
+  },
+}))
+
+Alpine.data('meetingSlideshow', () => ({
+  activeSlide: 0,
+  timer: null,
+  pointerWithin: false,
+  slides: [
+    { src: meeting36, alt: 'تصویر جلسه هیئت‌مدیره؛ جلسه سی و ششم', title: 'سی و ششمین جلسه هیئت مدیره برگزار گردید' },
+    { src: meeting37, alt: 'تصویر جلسه هیئت‌مدیره؛ جلسه سی و هفتم', title: 'سی و هفتمین جلسه هیئت مدیره برگزار گردید' },
+    { src: meeting38, alt: 'تصویر جلسه هیئت‌مدیره؛ جلسه سی و هشتم', title: 'سی و هشتمین جلسه هیئت مدیره برگزار گردید' },
+    { src: meeting39, alt: 'تصویر جلسه هیئت‌مدیره؛ جلسه سی و نهم', title: 'سی و نهمین جلسه هیئت مدیره برگزار گردید' },
+    { src: meeting40, alt: 'تصویر جلسه هیئت‌مدیره؛ جلسه چهلم', title: 'چهلمین جلسه هیئت مدیره برگزار گردید' },
+  ],
+  init() {
+    this.startAutoplay()
+  },
+  destroy() {
+    this.stopAutoplay()
+  },
+  stopAutoplay() {
+    if (this.timer !== null) {
+      window.clearInterval(this.timer)
+      this.timer = null
+    }
+  },
+  startAutoplay() {
+    this.stopAutoplay()
+    if (this.pointerWithin || document.hidden) return
+    this.timer = window.setInterval(() => {
+      this.activeSlide = (this.activeSlide + 1) % this.slides.length
+    }, 3000)
+  },
+  pauseForInteraction() {
+    this.pointerWithin = true
+    this.stopAutoplay()
+  },
+  resumeAfterInteraction() {
+    this.pointerWithin = false
+    this.startAutoplay()
+  },
+  goTo(index) {
+    if (index < 0 || index >= this.slides.length) return
+    this.activeSlide = index
+    this.startAutoplay()
+  },
+}))
+
+Alpine.data('importantNotices', () => ({
+  activeCategory: 'notices',
+  categories: [
+    { id: 'notices', label: 'اطلاعیه‌ها' },
+    { id: 'resolutions', label: 'مصوبات' },
+    { id: 'news', label: 'اخبار' },
+  ],
+  items: {
+    notices: [
+      { title: 'آغاز ثبت‌نام دوره‌های آموزشی تابستان ۱۴۰۴', date: '۱۴۰۴/۰۴/۰۱', dateTime: '2025-06-22', type: 'اطلاعیه', href: null },
+      { title: 'اطلاعیه تمدید مهلت پرداخت حق عضویت سال ۱۴۰۴', date: '۱۴۰۴/۰۳/۲۵', dateTime: '2025-06-15', type: 'اطلاعیه', href: null },
+      { title: 'ابلاغ تعرفه خدمات مهندسی سال ۱۴۰۴', date: '۱۴۰۴/۰۳/۱۸', dateTime: '2025-06-08', type: 'اطلاعیه', href: null },
+      { title: 'برگزاری مجمع عمومی عادی سالیانه کانون', date: '۱۴۰۴/۰۳/۱۰', dateTime: '2025-05-29', type: 'اطلاعیه', href: null },
+    ],
+    resolutions: [],
+    news: [
+      { title: 'حضور اعضای کانون در همایش ملی مهندسی ساختمان', date: '۱۴۰۴/۰۴/۰۵', dateTime: '', type: 'خبر', href: null },
+      { title: 'بازدید هیئت مدیره از پروژه‌های عمرانی شهر ساری', date: '۱۴۰۴/۰۳/۲۸', dateTime: '', type: 'خبر', href: null },
+      { title: 'تقدیر از مهندسین پیشکسوت کانون', date: '۱۴۰۴/۰۳/۲۰', dateTime: '', type: 'خبر', href: null },
+      { title: 'انتشار نشریه داخلی کانون مهندسین ساری', date: '۱۴۰۴/۰۳/۱۵', dateTime: '', type: 'خبر', href: null },
+    ],
+  },
+  get activeItems() {
+    return this.items[this.activeCategory] || []
+  },
+  selectCategory(id) {
+    if (this.categories.some((tab) => tab.id === id)) this.activeCategory = id
   },
 }))
 
@@ -248,4 +328,41 @@ function initializeNavigationDropdowns() {
 
 initializeNavigationDropdowns()
 
+function initializeLocalPersianDateTime() {
+  const dateElements = document.querySelectorAll('[data-shamsi-date]')
+  const clockElements = document.querySelectorAll('[data-local-clock]')
+  if (!dateElements.length && !clockElements.length) return
+
+  const dateFormatter = new Intl.DateTimeFormat('fa-IR-u-ca-persian', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  })
+  const clockFormatter = new Intl.DateTimeFormat('fa-IR', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23',
+  })
+
+  const update = () => {
+    const now = new Date()
+    const iso = now.toISOString()
+    const date = dateFormatter.format(now)
+    const time = clockFormatter.format(now)
+    dateElements.forEach((element) => {
+      element.textContent = date
+      element.setAttribute('datetime', iso)
+    })
+    clockElements.forEach((element) => {
+      element.textContent = time
+      element.setAttribute('datetime', iso)
+    })
+  }
+
+  update()
+  window.setInterval(update, 1000)
+}
+
+initializeLocalPersianDateTime()
 Alpine.start()

@@ -17,3 +17,26 @@
 body {
   font-family: "Vazirmatn", sans-serif;
 }
+
+.notices-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #8A9EB5 #E5EDF4;
+}
+
+.notices-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notices-scrollbar::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background: #E5EDF4;
+}
+
+.notices-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: #8A9EB5;
+}
+
+.notices-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #344F73;
+}

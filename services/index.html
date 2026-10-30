@@ -12,105 +12,40 @@
 
   
 <!-- نوار بالایی سایت -->
-<header dir="rtl" class="mx-auto mt-0 flex h-[58px] w-full max-w-[1262px] flex-row items-center justify-between rounded-t-none rounded-b-[15px] bg-white px-4 py-0 min-[1120px]:px-8 min-[1262px]:px-[50px]">
-
-  <!-- سمت راست: پنل کاربری و ورود اعضا -->
-  <nav aria-label="دسترسی کاربران" class="flex shrink-0 items-center gap-6 text-[12px] leading-[180%] tracking-[0] text-[#293b65]">
-
-    
-<!-- ورود اعضا -->
-<a href="/login/" class="flex items-center gap-2 whitespace-nowrap hover:text-orange-500">
-  <svg
-  width="20"
-  height="20"
-  viewBox="0 0 20 20"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="h-5 w-5 shrink-0"
->
-  <path
-    d="M9.99998 10.8333C12.3009 10.8333 14.1662 8.96785 14.1662 6.66667C14.1662 4.36548 12.3009 2.5 9.99998 2.5C7.69903 2.5 5.83373 4.36548 5.83373 6.66667C5.83373 8.96785 7.69903 10.8333 9.99998 10.8333ZM9.99998 10.8333C11.7679 10.8333 13.4634 11.5357 14.7136 12.786C15.9637 14.0362 16.666 15.7319 16.666 17.5M9.99998 10.8333C8.23205 10.8333 6.53653 11.5357 5.28641 12.786C4.03629 14.0362 3.33398 15.7319 3.33398 17.5"
-    stroke="currentColor"
-    stroke-width="1.8"
-    stroke-linecap="round"
-  />
-</svg>
-  ورود اعضا
-</a>
-
-
-    
-<!-- پنل کاربری -->
-<a href="/login/" class="flex items-center gap-2 whitespace-nowrap text-[#293470] hover:text-orange-500">
-  <svg
-    width="18"
-    height="18"
-    viewBox="0 0 18 18"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    class="shrink-0"
-  >
-    <path
-      d="M8.99999 8.9994H9.00749M12.0002 4.4994V2.9994C12.0002 2.60158 11.8422 2.22005 11.5609 1.93874C11.2795 1.65744 10.898 1.4994 10.5001 1.4994H7.49987C7.10201 1.4994 6.72045 1.65744 6.43912 1.93874C6.1578 2.22005 5.99975 2.60158 5.99975 2.9994V4.4994M12.0002 4.4994H5.99975M12.0002 4.4994H15.0005C15.829 4.4994 16.5006 5.17098 16.5006 5.9994V9.7494M5.99975 4.4994H2.99951C2.17102 4.4994 1.49939 5.17098 1.49939 5.9994V9.7494M16.5006 9.7494C14.275 11.2186 11.6669 12.0019 8.99999 12.0019C6.33311 12.0019 3.72497 11.2186 1.49939 9.7494M16.5006 9.7494V13.4994C16.5006 14.3278 15.829 14.9994 15.0005 14.9994H2.99951C2.17102 14.9994 1.49939 14.3278 1.49939 13.4994V9.7494"
-      stroke="currentColor"
-      stroke-width="1.8"
-      stroke-linecap="round"
-    />
-  </svg>
-  پنل کاربری
-</a>
-
+<header dir="rtl" class="mx-auto mt-0 flex h-[58px] w-full max-w-[1262px] flex-row items-center justify-between gap-2 rounded-t-none rounded-b-[15px] bg-white px-2 py-0 min-[640px]:px-4 min-[1120px]:px-8 min-[1262px]:px-[50px]">
+  <!-- سمت راست: ورود اعضا و ایمیل رسمی سایت -->
+  <nav aria-label="دسترسی کاربران" class="flex min-w-0 max-w-[48%] shrink items-center gap-[clamp(4px,0.8vw,12px)] text-[clamp(9px,0.95vw,12px)] leading-[180%] tracking-[0] text-[#293b65]">
+    <a href="/login/" aria-label="ورود اعضا" class="flex min-w-0 shrink items-center gap-1 whitespace-nowrap hover:text-orange-500 min-[420px]:gap-2">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" aria-hidden="true">
+        <path d="M9.99998 10.8333C12.3009 10.8333 14.1662 8.96785 14.1662 6.66667C14.1662 4.36548 12.3009 2.5 9.99998 2.5C7.69903 2.5 5.83373 4.36548 5.83373 6.66667C5.83373 8.96785 7.69903 10.8333 9.99998 10.8333ZM9.99998 10.8333C11.7679 10.8333 13.4634 11.5357 14.7136 12.786C15.9637 14.0362 16.666 15.7319 16.666 17.5M9.99998 10.8333C8.23205 10.8333 6.53653 11.5357 5.28641 12.786C4.03629 14.0362 3.33398 15.7319 3.33398 17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <span class="hidden whitespace-nowrap min-[420px]:inline">ورود اعضا</span>
+    </a>
+    <a href="mailto:info@kanoonsari.com" aria-label="ارسال ایمیل به info@kanoonsari.com" class="flex min-w-0 shrink items-center gap-1 text-[#293470] hover:text-orange-500 min-[420px]:gap-2">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[17px] w-[17px] shrink-0" aria-hidden="true">
+        <path d="M2.25 3.25h13.5c.55 0 1 .45 1 1v9.5c0 .55-.45 1-1 1H2.25c-.55 0-1-.45-1-1v-9.5c0-.55.45-1 1-1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="m1.75 4 7.25 5.5L16.25 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="max-w-[clamp(52px,13vw,168px)] truncate whitespace-nowrap">info@kanoonsari.com</span>
+    </a>
   </nav>
 
-  <!-- سمت چپ: جست‌وجو و لینک‌های اطلاع‌رسانی -->
-  <div class="flex flex-row-reverse items-center gap-6">
-
-    <!-- کادر جست‌وجو -->
-    <form x-data="homeSearch" x-on:submit.prevent="search()" role="search" class="flex h-[30px] w-[227px] shrink-0 items-center gap-[10px] rounded-[18px] bg-[#293b70] px-[10px] py-0 text-white">
-
-      <!-- متن جست‌وجو در سمت راست -->
-      <input
-        type="search"
-        x-model="query"
-        placeholder="جست‌وجو در سایت..."
-        aria-label="جست‌وجو در سایت"
-        dir="rtl"
-        class="min-w-0 flex-1 bg-transparent text-right text-[12px] leading-[180%] tracking-[0] text-white outline-none placeholder:text-white/80"
-      >
-
-      <!-- آیکون جست‌وجو در سمت چپ -->
-      
-<button type="submit" aria-label="جست‌وجو" class="flex h-4 w-4 shrink-0 items-center justify-center bg-transparent p-0"><svg
-  width="16"
-  height="16"
-  viewBox="0 0 16 16"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="h-4 w-4 shrink-0"
->
-  <path
-    d="M14.0001 14.0001L11.1068 11.1068M12.6667 7.33333C12.6667 10.2789 10.2789 12.6667 7.33333 12.6667C4.38781 12.6667 2 10.2789 2 7.33333C2 4.38781 4.38781 2 7.33333 2C10.2789 2 12.6667 4.38781 12.6667 7.33333Z"
-    stroke="#8A9EB5"
-    stroke-width="1.8"
-    stroke-linecap="round"
-  />
-</svg></button>
-
-
-    <p class="sr-only" aria-live="polite" x-text="status"></p>
-</form>
-
-    <nav aria-label="اطلاعات سایت" class="flex shrink-0 items-center gap-5 text-[12px] leading-[180%] tracking-[0] text-[#293b65]">
-
-      <a href="/contact/" class="whitespace-nowrap hover:text-orange-500">
-        ☎ تماس با ما
-      </a>
-
-
+  <!-- سمت چپ: تاریخ شمسی و ساعت زنده، در محل قبلی جست‌وجو -->
+  <div class="flex min-w-0 max-w-[50%] flex-row-reverse items-center gap-[clamp(4px,0.8vw,12px)]">
+    <div dir="rtl" aria-label="تاریخ شمسی و ساعت محلی" class="flex h-[30px] w-[clamp(100px,18vw,227px)] min-w-0 shrink items-center gap-1 rounded-[18px] bg-[#293b70] px-2 py-0 text-white min-[480px]:gap-[7px] min-[480px]:px-[10px]">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" aria-hidden="true">
+        <circle cx="10" cy="10" r="7.25" stroke="#8A9EB5" stroke-width="1.5" />
+        <path d="M10 5.75v4.5l3 1.75M7 1.75h6M10 1.75v1" stroke="#8A9EB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div class="flex min-w-0 flex-1 items-center justify-between gap-1 text-[clamp(8px,0.85vw,11px)] leading-tight tracking-[0] min-[480px]:gap-[6px]">
+        <time data-shamsi-date class="min-w-0 truncate whitespace-nowrap" aria-label="تاریخ شمسی">—</time>
+        <time data-local-clock class="shrink-0 whitespace-nowrap tabular-nums" aria-label="ساعت محلی">—</time>
+      </div>
+    </div>
+    <nav aria-label="اطلاعات سایت" class="flex min-w-0 shrink-0 items-center text-[clamp(9px,0.95vw,12px)] leading-[180%] tracking-[0] text-[#293b65]">
+      <a href="/contact/" class="whitespace-nowrap hover:text-orange-500">☎ تماس با ما</a>
     </nav>
-
   </div>
-
 </header>
 
 
@@ -179,29 +114,28 @@
   </div>
 </section>
 
+ 
   <!-- ناوبری اصلی مطابق فریم دسکتاپ Figma -->
   <nav
     aria-label="ناوبری اصلی"
     dir="rtl"
     class="relative z-10 mx-auto -mt-[2px] flex h-[60px] w-full max-w-[1260px] items-stretch justify-between rounded-b-[25px] bg-white px-[clamp(12px,calc(28.81356vw_-_283.05085px),80px)] text-[clamp(12px,1.11112vw,14px)] font-bold text-[#293470]"
   >
-    <a href="/home/" class="flex h-full shrink-0 items-center whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
+    <a href="/home/" class="relative flex h-full shrink-0 items-center whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] text-[#3871ae] hover:text-orange-500" aria-current="page">
       صفحه اصلی
+      <span aria-hidden="true" class="absolute bottom-0 left-0 h-[3px] w-[clamp(76px,7.0635vw,89px)] bg-[#ff7400]"></span>
     </a>
 
     <a href="/news/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
       <span>اخبار و اطلاعیه‌ها</span>
-      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
-        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
+      
     </a>
 
-    <a href="/services/" class="relative flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] text-[#3871ae] hover:text-orange-500" aria-current="page">
+    <a href="/services/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
       <span>خدمات</span>
       <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
         <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
-      <span aria-hidden="true" class="absolute bottom-0 left-0 h-[3px] w-[clamp(76px,7.0635vw,89px)] bg-[#ff7400]"></span>
     </a>
 
     <a href="/app/" class="flex h-[60px] w-[clamp(112px,11.667vw,147px)] shrink-0 items-center justify-center whitespace-nowrap rounded-[5px] bg-[#f78c32] px-2.5 text-[#293470]">
@@ -210,9 +144,7 @@
 
     <a href="/members/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
       <span>اعضای کانون</span>
-      <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
-        <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
+      
     </a>
 
     <a href="/workgroup/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
@@ -223,12 +155,13 @@
     </a>
 
     <a href="/contact/" class="flex h-full shrink-0 items-center gap-[clamp(4px,0.79365vw,10px)] whitespace-nowrap px-[clamp(6px,0.79365vw,10px)] hover:text-orange-500">
-      <span>ارتباط با ما</span>
+      <span>درباره کانون</span>
       <svg aria-hidden="true" viewBox="0 0 8 6" class="h-3 w-3 shrink-0" fill="none">
         <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </a>
   </nav>
+
 
 
   <section aria-labelledby="page-title" dir="rtl" class="mx-auto mt-[22px] min-h-[260px] w-full max-w-[1266px] px-5 pt-4">
